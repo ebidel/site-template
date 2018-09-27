@@ -1,0 +1,202 @@
+:root {
+  --site-width: 740px;
+
+  --content-padding: 16px;
+  --section-padding: 72px;
+
+  --phone-breakpoint-max: 425px;
+  --tablet-breakpoint-min: 768px;
+  --desktop-breakpoint-min: 945px;
+
+  /* --md-blue-grey-50: #ECEFF1;
+  --md-blue-grey-100: #CFD8DC;
+  --md-blue-grey-300: #90A4AE;
+  --md-blue-grey-400: #78909C;
+  --md-blue-grey-500: #607D8B;
+  --md-blue-grey-600: #546E7A;
+  --md-blue-grey-700: #455A64;
+  --md-blue-grey-800: #37474F;
+  --md-blue-grey-900: #263238; */
+
+  --md-blue-primary: #2196f3;
+  --md-blue-light: #6ec6ff;
+  --md-blue-dark: #0069c0;
+
+  --md-grey-primary: #757575;
+  --md-grey-light: #6d6d6d;
+  --md-grey-dark: #494949;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  color: var(--md-grey-dark);
+  font-family: "Google Sans", Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  /* Note: Google Fonts API doesn't support this yet so we're using the async JS loader API. */
+  /* font-display: swap; */
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  margin: 0 0 var(--content-padding) 0;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  margin: calc(var(--content-padding) * 2) 0 var(--content-padding) 0;
+}
+
+a {
+  color: inherit;
+}
+
+p {
+  margin-top: 0;
+}
+
+figure {
+  text-align: center;
+}
+
+figcaption {
+  font-weight: 600;
+}
+
+section {
+  padding: var(--section-padding) 0;
+}
+
+pre {
+  font-size: 14px;
+  overflow-x: auto;
+  padding: var(--content-padding);
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  -webkit-font-smoothing: initial;
+}
+
+.hidden, [hidden] {
+  display: none !important;
+}
+
+.main-content a {
+  color: var(--md-blue-primary);
+}
+
+.main-content a:hover {
+  text-decoration: underline;
+}
+
+.main-content img {
+  max-width: 100%;
+}
+
+.content-width {
+  max-width: var(--site-width);
+  width: calc(100% - 32px);
+  margin: 0 auto;
+}
+
+.navbar, footer {
+  background-color: var(--md-blue-dark);
+  color: #fff;
+  padding: var(--content-padding);
+}
+
+.navbar .navbar-title {
+  margin: 0;
+}
+
+.navbar nav {
+  text-transform: uppercase;
+}
+
+.navbar nav a {
+  display: inline-flex;
+  padding: var(--content-padding);
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #bbdefb;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+}
+
+.medium-icon {
+  margin-right: calc(var(--content-padding) / 2);
+}
+
+.navbar .social-icon {
+  margin-left: var(--content-padding);
+  height: 20px;
+  width: 20px;
+}
+
+.shadow {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+              0 -1px 5px 0 rgba(0, 0, 0, 0.12),
+              0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.fab-wrapper {
+  position: absolute;
+  top: 0;
+}
+
+.fab {
+  --fab-size: 56px;
+  height: var(--fab-size);
+  width: var(--fab-size);
+  position: absolute;
+  top: calc(var(--fab-size) / 2 * -1);
+  right: 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: url("/img/icons/chevron-dark.svg") no-repeat 50% 50%;
+  background-size: 32px;
+  background-color: #fff;
+  transition: box-shadow 200ms ease-in-out;
+}
+
+.fab:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+              0 1px 18px 0 rgba(0, 0, 0, 0.12),
+              0 3px 5px -1px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+  position: relative;
+}
+
+.secondary-text {
+  color: var(--md-grey-light);
+}
+
+@media (max-width: 767px) {
+  :root {
+    --section-padding: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+
+}

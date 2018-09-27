@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block head %}
+<!-- <link rel="modulepreload" href="/render.js"> -->
+<!-- <link rel="modulepreload" href="/lit-html/lit-html.js"> -->
+<!-- <link rel="modulepreload" href="/lit-html/lib/repeat.js"> -->
+<style>
+
+</style>
+<link rel="preload" href="{% if DEV %}/highlight.js/styles/github.css{% else %}/css/github.min.css{% endif %}" onload="this.rel='stylesheet'" as="style">
+{% endblock %}
+
+{% block content %}
+<section>
+
+{% markdown %}
+# Welcome
+
+Some intro text.
+
+```
+function someFunction() {
+  ...
+}
+```
+
+## Posts
+{% endmarkdown %}
+
+<ul class="posts-list">
+{%- for post in posts | limit(10) %}
+  <li class="post">{{post.title}}</li>
+{%- else %}
+  <li>No posts yet!</li>
+{%- endfor %}
+</ul>
+
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script type="module" src="/js/pages/index.mjs"></script>
+<script nomodule src="/js/pages/index.min.js" defer></script>
+{% endblock %}
