@@ -1,5 +1,5 @@
 node_modules/
 *-error.log
-public/css/.*min.css
-public/**/*.min.js
-public/**/*.bundle.js
+**/*min.css
+**/*.min.js
+**/*.bundle.js

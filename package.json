@@ -18,11 +18,11 @@
     "build": "gulp && npm run bundle"
   },
   "devDependencies": {
-    "cssnano": "^4.1.0",
+    "cssnano": "^4.1.4",
     "del": "^3.0.0",
     "eslint": "^5.5.0",
     "eslint-config-google": "^0.10.0",
-    "google-closure-compiler": "^20180910.0.0",
+    "google-closure-compiler": "^20180910.1.0",
     "gulp": "^3.9.1",
     "gulp-fn": "^0.0.3",
     "gulp-gray-matter": "^3.0.1",
@@ -30,7 +30,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-webp": "^3.0.0",
     "merge-stream": "^1.0.0",
-    "postcss": "^7.0.2",
+    "postcss": "^7.0.4",
     "postcss-css-variables": "^0.10.0",
     "postcss-import": "^12.0.0",
     "rollup": "^0.66.2",
