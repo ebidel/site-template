@@ -1,4 +1,5 @@
-Site: [ericbidelman.com](https://ericbidelman.com/)
+Minimal Node/Express server that is basically a static markdown site generator,
+but way less deps!
 
 ### Development
 
