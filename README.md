@@ -10,7 +10,7 @@ Get the code:
     npm i
 
 To run, start the server. The `env` variable `DEV=true` will recompile
-nunjucks templates as edits are made and server the unminified JS/CSS files.
+nunjucks templates as edits are made and serve the unminified JS/CSS files.
 
     yarn start
     DEV=true yarn start
